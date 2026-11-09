@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import {
   ArrowUp,
   Armchair,
@@ -104,7 +104,7 @@ function WhatsAppButton({
   variant = "gold",
   className,
 }: {
-  children?: React.ReactNode;
+  children?: ReactNode;
   variant?: "gold" | "ghostGold";
   className?: string;
 }) {
@@ -400,7 +400,7 @@ function Contact() {
           <div className="bg-card p-7">
             <p className="eyebrow">Região atendida</p>
             <p className="mt-4 text-sm leading-relaxed text-foreground">
-              Cambuci, Aclimação, Liberdade e região central de São Paulo.
+              Cambuci e região — São Paulo, SP.
             </p>
           </div>
           <div className="bg-card p-7">
