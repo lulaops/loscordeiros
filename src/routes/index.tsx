@@ -425,8 +425,8 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="border-t border-border/60 py-10">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center sm:flex-row sm:px-8 sm:text-left">
+    <footer className="border-t border-border/60 pb-28 pt-10 sm:py-10">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center sm:flex-row sm:px-8 sm:pr-28 sm:text-left">
         <div>
           <p className="font-display text-xl">Los Cordeiros</p>
           <p className="text-[0.62rem] font-semibold uppercase tracking-[0.38em] text-primary">Barbearia · Lins</p>
