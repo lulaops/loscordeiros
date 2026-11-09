@@ -90,13 +90,13 @@ const DIFFERENTIALS = [
 ];
 
 const GALLERY = [
-  { src: foto10.url, alt: "Barbeiro fazendo a barba de um cliente", className: "sm:row-span-2" },
+  { src: foto10.url, alt: "Barbeiro fazendo a barba de um cliente", className: "row-span-2" },
   { src: foto02.url, alt: "Corte degradê baixo finalizado", className: "" },
   { src: foto06.url, alt: "Corte com degradê e barba alinhada", className: "" },
+  { src: foto05.url, alt: "Corte afro com acabamento na nuca", className: "row-span-2" },
   { src: foto04.url, alt: "Cliente com toalha quente durante a barba", className: "sm:col-span-2" },
-  { src: foto05.url, alt: "Corte afro com acabamento na nuca", className: "" },
-  { src: foto07.url, alt: "Corte infantil com degradê", className: "" },
-  { src: foto01.url, alt: "Ambiente interno da barbearia com cadeiras", className: "sm:col-span-2 lg:col-span-1" },
+  { src: foto07.url, alt: "Corte infantil com degradê", className: "lg:col-span-2 object-top" },
+  { src: foto01.url, alt: "Ambiente interno da barbearia com cadeiras", className: "lg:col-span-2" },
 ];
 
 function WhatsAppButton({
@@ -149,7 +149,7 @@ function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled || open ? "border-b border-border/60 bg-background/90 backdrop-blur-md" : "bg-transparent"
+        open ? "border-b border-border/60 bg-background" : scrolled ? "border-b border-border/60 bg-background/90 backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <div className="mx-auto grid h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8 lg:flex lg:justify-between">
@@ -346,7 +346,7 @@ function Gallery() {
           <SectionHeading eyebrow="Galeria" title="Nosso trabalho fala por si." />
           <p className="max-w-sm text-muted-foreground">Cortes reais, feitos na nossa cadeira.</p>
         </div>
-        <div className="mt-16 grid auto-rows-[18rem] grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-[16rem] lg:grid-cols-4 lg:auto-rows-[18rem]">
+        <div className="mt-16 grid grid-flow-row-dense auto-rows-[18rem] grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-[16rem] lg:grid-cols-4 lg:auto-rows-[18rem]">
           {GALLERY.map((g) => (
             <figure key={g.src} className={`group relative overflow-hidden bg-muted ${g.className}`}>
               <img
