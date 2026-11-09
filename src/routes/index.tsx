@@ -90,12 +90,12 @@ const DIFFERENTIALS = [
 ];
 
 const GALLERY = [
-  { src: foto10.url, alt: "Barbeiro fazendo a barba de um cliente", className: "row-span-2" },
+  { src: foto10.url, alt: "Barbeiro fazendo a barba de um cliente", className: "sm:row-span-2" },
   { src: foto02.url, alt: "Corte degradê baixo finalizado", className: "" },
   { src: foto06.url, alt: "Corte com degradê e barba alinhada", className: "" },
-  { src: foto05.url, alt: "Corte afro com acabamento na nuca", className: "row-span-2" },
+  { src: foto05.url, alt: "Corte afro com acabamento na nuca", className: "sm:row-span-2" },
   { src: foto04.url, alt: "Cliente com toalha quente durante a barba", className: "sm:col-span-2" },
-  { src: foto07.url, alt: "Corte infantil com degradê", className: "lg:col-span-2 object-top" },
+  { src: foto07.url, alt: "Corte infantil com degradê", className: "lg:col-span-2" },
   { src: foto01.url, alt: "Ambiente interno da barbearia com cadeiras", className: "lg:col-span-2" },
 ];
 
