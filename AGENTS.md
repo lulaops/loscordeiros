@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- The site is a single page (`src/routes/index.tsx`) with in-page anchor sections; do not add internal routes, because the brief requires a one-page site.
+- All WhatsApp links come from `src/lib/whatsapp.ts`, so the number and message change in one place.
